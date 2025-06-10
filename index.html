@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulace oka - Index lomu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulace oka – Zaostření</h1>
+    <div id="container">
+    <canvas id="eyeCanvas" width="800" height="600"></canvas>
+    <div>
+        <label for="focusSlider">Zaostření (akomodace):</label>
+        <input type="range" id="focusSlider" min="500" max="700" step="1" value="600">
+        <span id="focusValue">600</span>
+    </div>
+    <div id="backgroundWrapper">
+        <img id="backgroundImage" src="dalekozrakost.jpg" alt="Dalekozrakost">
+        <img id="foregroundImage" src="kratkozrakost.gif" alt="Krátkozrakost">
+    </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
